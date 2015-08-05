@@ -1,0 +1,129 @@
+#principal{   /*estilo al id="principal"*/
+	color: red;
+	background: black;
+	text-decoration: underline;
+	text-indent: 30px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2EFE9A;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: line-through;	
+	text-transform: capitalize;
+}
+
+p{
+	padding: 20px 30px 40px 50px;
+	border: 5px solid #ff0000;
+	margin: 20px;
+}
+/*estilo a una clase*/
+p.destacado{
+	width: 500px;
+	height: 10px;
+}
+/*los margenes de abajo y arriba no se suman, se superponen, margen total 40px*/
+h3{
+	margin-bottom: 40px;
+}
+
+h4{
+	margin-top: 20px;
+}
+/*descendientes*/
+ul li{
+	color: #ff0000;
+}
+
+ol li{
+	color: #CC2EFA;
+}
+/*pseudo-clases, link*/
+a {
+  text-decoration: none;
+}
+
+a:visited{
+	color:#777777;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:active{
+	font-weight: bold;
+}
+
+#ancho_alto_max_min{
+	max-width: 960px;
+	min-width: 550px;
+
+	max-height: 300px;
+	min-height: 50px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav{
+	box-sizing: content-box;
+	border: 1px black solid;
+	width: 100px;
+	padding: 20px;
+	padding: 10px;
+	margin: 20px;
+	margin: 10px;
+}
+
+/*Armar Pagina Web */
+
+#encabezado {
+border: 1px black solid;
+
+}
+
+ul#botonera {
+	overflow: auto;
+	border: 1px black solid;
+}
+ul#botonera li {
+  float: left;
+}
+
+#contenido_principal {
+  width: 70%;
+  float: left;
+  border: 1px black solid;
+}
+
+#contenido_secundario {
+  width: 25%;
+  float: right;
+  /*margin-left: 5%;*/
+  border: 1px black solid;
+}
+
+#pie {
+  clear: both;
+  border: 1px black solid;
+}
+
+/*PROPIEDAD GRADIENT*/
+
+h1 {
+  background: -moz-linear-gradient(top, #000000 0%, #ff0000 50%, #ffffff 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(50%,#ff0000), color-stop(100%,#ffffff)); /* Chrome, Safari 4+ */
+  background: -webkit-linear-gradient(top, #000000 0%, #ff0000 50%, #ffffff 100%); /* Chrome 10+, Safari 5.1+ */
+  background: -o-linear-gradient(top, #000000 0%, #ff0000 50%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #000000 0%, #ff0000 50%, #ffffff 100%); /* IE 10+ */
+  background: linear-gradient(to bottom, #000000 0%, #ff0000 50%, #ffffff 100%); /* Código estándar W3C */
+}
